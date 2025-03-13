@@ -1,15 +1,18 @@
+/* Общие стили */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
 }
 
+/* Шапка */
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -20,6 +23,7 @@ header .logo img {
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -33,15 +37,18 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* Баннер */
 .banner {
     position: relative;
     text-align: center;
     color: #fff;
+    overflow: hidden;
 }
 
 .banner img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .banner-text {
@@ -49,17 +56,21 @@ nav ul li a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2em;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .banner-text h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
+    color: #fff; /* Белый цвет текста */
 }
 
 .banner-text p {
     font-size: 1.2em;
     margin-bottom: 20px;
+    color: #fff; /* Белый цвет текста */
 }
 
 .btn {
@@ -69,36 +80,40 @@ nav ul li a {
     text-decoration: none;
     border-radius: 5px;
     font-size: 1em;
+    display: inline-block;
 }
 
+/* Особенности */
 .features {
     display: flex;
     justify-content: space-around;
     padding: 40px 20px;
     background-color: #fff;
+    text-align: center;
 }
 
 .feature {
-    text-align: center;
     width: 30%;
 }
 
 .feature h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
+    color: #333; /* Темный цвет текста */
 }
 
 .feature p {
     font-size: 1em;
-    color: #666;
+    color: #666; /* Серый цвет текста */
 }
 
+/* Подвал */
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
